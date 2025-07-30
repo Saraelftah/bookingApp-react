@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import style from "./Search.module.css";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function Search() {

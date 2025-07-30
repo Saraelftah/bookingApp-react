@@ -1,11 +1,6 @@
-import { useEffect } from "react";
-// import style from "./Offercard.module.css";
 import { Link } from "react-router-dom";
 
 function Offercard({ offer }) {
-  // const [counter, setCounter] = useState(0);
-
-  useEffect(() => {}, []);
 
   return (
     <>

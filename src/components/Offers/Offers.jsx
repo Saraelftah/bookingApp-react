@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { axiosInstance } from "../../network/interceptor";
 import Offercard from "../OfferCard/OfferCard";
-// import style from "./BestOffers.module.css";
 
 function BestOffers() {
   const [bestOffers, setBestOffers] = useState([]);
