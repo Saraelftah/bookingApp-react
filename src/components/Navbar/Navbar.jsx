@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Navitem from "../Navitem/Navitem";
-import { useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 import "./Navbar.module.css";
@@ -69,7 +68,6 @@ function Navbar({ isOpen }) {
                 label="Hotel"
                 direction="col"
                 to="/hotels"
-                
               />
               <Navitem
                 icon="fa-solid fa-house"
@@ -83,14 +81,12 @@ function Navbar({ isOpen }) {
                 label="Taxi"
                 direction="col"
                 to="/"
-                 
               />
               <Navitem
                 icon="fa-solid fa-plane-departure"
                 direction="col"
                 label="Flight"
                 to="/"
-                
               />
             </ul>
           </div>
@@ -126,7 +122,7 @@ function Navbar({ isOpen }) {
                 </div>
               </div>
             </div>
-            
+
             {/* desktop */}
             <ul className="hidden lg:flex gap-4 absolute right-20">
               {!isLoggedIn ? (

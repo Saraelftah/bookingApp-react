@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 // import style from "./RecommHotels.module.css";
-import { axiosInstance } from "../../network/interceptor";
-import SlideCard from "../SlideCard/SlideCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { axiosInstance } from "../../network/interceptor";
+import SlideCard from "../SlideCard/SlideCard";
 
 const responsive = {
   desktop: {

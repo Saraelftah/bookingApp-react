@@ -1,11 +1,11 @@
 // import style from "./Signin.module.css";
 import { useForm } from "react-hook-form";
-import { Link, NavLink, useNavigate } from "react-router-dom";
-import logo from "../../assets/images/blueLogo.png";
-import sideImg from "../../assets/images/BG.png";
-import google from "../../assets/images/google-color.svg";
-import facebook from "../../assets/images/facebook-color.svg";
 import toast from "react-hot-toast";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import sideImg from "../../assets/images/BG.png";
+import logo from "../../assets/images/blueLogo.png";
+import facebook from "../../assets/images/facebook-color.svg";
+import google from "../../assets/images/google-color.svg";
 
 function Signup() {
   const navigate = useNavigate();

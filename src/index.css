@@ -6,8 +6,8 @@
   line-height: 1.5;
   font-weight: 400;
 
- --main-color: #282E44;
- --light-color: #475073;
+  --main-color: #282E44;
+  --light-color: #475073;
 }
 
 
@@ -51,5 +51,3 @@ ul {
 img {
   width: 100%;
 }
- 
-

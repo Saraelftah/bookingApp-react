@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar/Navbar";
-import Sidebar from "../components/Sidebar/Sidebar";
 import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar/Navbar";
 import Search from "../components/Search/Search";
+import Sidebar from "../components/Sidebar/Sidebar";
 Outlet;
 
 function Layout() {

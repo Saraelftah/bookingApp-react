@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
-import nobook from "../../assets/images/nobook.png";
 import booknow from "../../assets/images/book-now.png";
+import nobook from "../../assets/images/nobook.png";
 import Profile from "../../components/Profile/Profile";
 
 function MyBookings() {
@@ -9,7 +9,7 @@ function MyBookings() {
   return (
     <>
       <div className="mt-10 container">
-        <div className="flex justify-between gap-8">
+        <div className="flex flex-col-reverse lg:flex-row justify-between gap-8">
           <div className=" w-4/6">
             <h2 className="text-3xl font-bold mb-5">My Bookings</h2>
             {bookings.length === 0 ? (

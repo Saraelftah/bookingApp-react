@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import style from "./TemplateName.module.css";
 
 function TemplateName() {
   const [counter, setCounter] = useState(0);

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import SummaryCard from "../../components/SummaryCard/SummaryCard";
 import { useDispatch } from "react-redux";
+import { useLocation, useNavigate } from "react-router-dom";
+import SummaryCard from "../../components/SummaryCard/SummaryCard";
 import { addBooking } from "../../store/bookingSlice";
 
 function Payment() {

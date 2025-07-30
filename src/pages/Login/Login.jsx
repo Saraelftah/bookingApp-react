@@ -1,10 +1,10 @@
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import sideImg from "../../assets/images/BG.png";
 import logo from "../../assets/images/blueLogo.png";
-import google from "../../assets/images/google-color.svg";
 import facebook from "../../assets/images/facebook-color.svg";
-import toast from "react-hot-toast";
+import google from "../../assets/images/google-color.svg";
 
 // import style from "./Login.module.css";
 

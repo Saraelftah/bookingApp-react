@@ -4,21 +4,21 @@
     height: 80vh;
     border-radius: 16px;
     /* width: 20%; */
-    background-image: linear-gradient( to bottom, #0A69DA,#0856C8, #0231A5);
+    background-image: linear-gradient(to bottom, #0A69DA, #0856C8, #0231A5);
 }
 
-.signupBtn{
-   width: 80%;
-   color: #FF3B30;
-   border: 1px solid #FF3B30;
+.signupBtn {
+    width: 80%;
+    color: #FF3B30;
+    border: 1px solid #FF3B30;
 }
 
 .signupContainer {
     background-image: url(../../assets/images/sidebar.png);
 }
 
-.logo{
-      font-family: "Kaushan Script", cursive;
-      font-size: 22px;
- 
+.logo {
+    font-family: "Kaushan Script", cursive;
+    font-size: 22px;
+
 }

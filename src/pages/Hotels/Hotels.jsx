@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import HotelCard from "../../components/HotelCard/HotelCard"; 
+import HotelCard from "../../components/HotelCard/HotelCard";
+import Loader from "../../components/Loader/Loader";
 import { axiosInstance } from "../../network/interceptor";
 
 function Hotels() {
@@ -28,7 +29,7 @@ function Hotels() {
       </h2>
 
       {isloading ? (
-        <div className="text-center text-xl">Loading...</div>
+        <Loader />
       ) : hotels.length > 0 ? (
         <div className="flex flex-col gap-6">
           {hotels.map((hotel) => (
@@ -42,4 +43,4 @@ function Hotels() {
   );
 }
 
-export default Hotels
+export default Hotels;

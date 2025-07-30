@@ -1,6 +1,6 @@
-import AppRoutes from "./routes/AppRoutes";
-import "./App.css";
 import { Suspense } from "react";
+import "./App.css";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (

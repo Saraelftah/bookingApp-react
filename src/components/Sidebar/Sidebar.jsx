@@ -1,7 +1,7 @@
-import styles from "./Sidebar.module.css";
-import Navitem from "../Navitem/Navitem";
-import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import Navitem from "../Navitem/Navitem";
+import styles from "./Sidebar.module.css";
 
 
 function Sidebar({isOpen, toggleSidebar}) {

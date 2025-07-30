@@ -1,7 +1,7 @@
 // import { useEffect, useState } from "react";
-import "./Home.module.css";
-import RecommHotels from "../../components/RecommHotels/RecommHotels";
 import Offers from "../../components/Offers/Offers";
+import RecommHotels from "../../components/RecommHotels/RecommHotels";
+import "./Home.module.css";
 
 
 function Home() {

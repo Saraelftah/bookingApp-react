@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import style from "./Details.module.css";
-import { axiosInstance } from "../../network/interceptor.js";
 import { useParams } from "react-router-dom";
 import DetailsCard from "../../components/DetailsCard/DetailsCard.jsx";
 import RecommHotels from "../../components/RecommHotels/RecommHotels.jsx";
+import { axiosInstance } from "../../network/interceptor.js";
 
 function Details() {
 

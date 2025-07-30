@@ -22,16 +22,15 @@ function BestOffers() {
 
   return (
     <>
-    <div className="rounded-box shadow-md p-4 mt-30 bg-white">
-      <h2 className="text-2xl font-bold mb-3">Best Offers</h2>
+      <div className="rounded-box shadow-md p-4 mt-30 bg-white">
+        <h2 className="text-2xl font-bold mb-3">Best Offers</h2>
 
-      <div  className="grid grid-cols-1 sm:grid-cols-2 gap-5 justify-items-center">
-        {bestOffers.map((offer) => (
-          <Offercard key={offer.id} offer={offer} />
-        ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 justify-items-center">
+          {bestOffers.map((offer) => (
+            <Offercard key={offer.id} offer={offer} />
+          ))}
+        </div>
       </div>
-    </div>
-  
     </>
   );
 }

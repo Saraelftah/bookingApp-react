@@ -1,6 +1,5 @@
-import RecommHotels from "../RecommHotels/RecommHotels";
-import RatingStars from "../RatingStars/RatingStars";
 import { useNavigate } from "react-router-dom";
+import RatingStars from "../RatingStars/RatingStars";
 
 
 function DetailsCard({ details }) {
@@ -14,7 +13,7 @@ function DetailsCard({ details }) {
   return (
     <>
       <div className="card lg:card-side bg-base-100 shadow-md my-4 mb-15">
-        <figure className="w-2/4 overflow-hidden">
+        <figure className="lg:w-2/4 overflow-hidden">
           <img src={details.images.main} alt={details.name} />
         </figure>
 
