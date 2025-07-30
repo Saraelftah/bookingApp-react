@@ -1,0 +1,24 @@
+nav {
+    background-image: url(../../assets/images/HeaderBG.jpg);
+    background-size: cover;
+    padding-top: 32px;
+    position: relative;
+}
+
+.homeNavbar {
+  height: 325px;
+}
+
+.defaultNavbar {
+  height: 120px;
+}
+
+.homeItems{
+    position: absolute;
+    bottom: 40%;
+    left: 100px;
+}
+.defaultItems {
+    position: static;
+}
+
