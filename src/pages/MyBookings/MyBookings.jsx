@@ -10,7 +10,7 @@ function MyBookings() {
     <>
       <div className="mt-10 container">
         <div className="flex flex-col-reverse lg:flex-row justify-between gap-8">
-          <div className=" w-4/6">
+          <div className=" lg:w-4/6">
             <h2 className="text-3xl font-bold mb-5">My Bookings</h2>
             {bookings.length === 0 ? (
               <>
@@ -30,7 +30,7 @@ function MyBookings() {
               </>
             ) : (
               <div>
-                <div className="flex  gap-4 w-5/6">
+                <div className="grid gap-4 w-full">
                   {bookings.map((booking, index) => (
                     <div
                       key={index}
@@ -44,11 +44,11 @@ function MyBookings() {
                         />
                       </div>
 
-                      <div className="bg-gray-300">
+                      <div className="w-full">
                         <h3 className="text-xl font-semibold">
                           {booking.hotel}
                         </h3>
-                        <p className="text-sm text-gray-600 mb-1">
+                        <p className="text-sm text-gray-600 mb-2">
                           <i className="fa-solid fa-location-dot mr-1"></i>
                           {booking.address?.street}, {booking.address?.city}
                         </p>
@@ -57,13 +57,14 @@ function MyBookings() {
                           <span className="font-semibold">Nights:</span>{" "}
                           {booking.totalDays}
                         </p>
-                        <div className="flex justify-between bg-red-500">
+
+                        <div className="flex justify-between mt-4 gap-4 ">
                           <p className="font-bold text-green-700">
-                            Total Paid: {booking.totalPrice} $
+                            Total: ${booking.totalPrice}
                           </p>
 
-                          <div className="text-gray-500 text-sm">
-                            <span>
+                          <div className="text-gray-500 text-sm mt-4">
+                            <span className="mr-2">
                               <b>From:</b> {booking.fromDate}{" "}
                             </span>
 

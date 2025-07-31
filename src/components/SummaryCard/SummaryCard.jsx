@@ -14,6 +14,16 @@ function SummaryCard({
   const [toDate, setToDate] = useState(toProp || "");
   const price = details?.pricing[0]?.discountedPrice || 0;
 
+  function formatDate(dateString) {
+  if (!dateString) return "";
+  const date = new Date(dateString);
+  return date.toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  }).replace(/ /g, "-");
+}
+
   useEffect(() => {
     if (fromDate && toDate) {
       const start = new Date(fromDate);
@@ -46,8 +56,9 @@ function SummaryCard({
             className="input input-bordered"
             value={fromDate}
             onChange={(e) => {
+              const formatted = formatDate(e.target.value);
               setFromDate(e.target.value);
-              setFromDateProp && setFromDateProp(e.target.value);
+              setFromDateProp && setFromDateProp(formatted); 
             }}
           />
           <label>To:</label>
@@ -56,18 +67,19 @@ function SummaryCard({
             className="input input-bordered"
             value={toDate}
             onChange={(e) => {
+              const formatted = formatDate(e.target.value);
               setToDate(e.target.value);
-              setToDateProp && setToDateProp(e.target.value);
+              setToDateProp && setToDateProp(formatted);
             }}
           />
         </div>
 
         <div className="text-sm text-gray-600 mb-3">
           <p>
-            <span className="font-semibold">From:</span> {fromDate}
+            <span className="font-semibold">From:</span> {formatDate(fromDate)}
           </p>
           <p>
-            <span className="font-semibold">To:</span> {toDate}
+            <span className="font-semibold">To:</span> {formatDate(toDate)}
           </p>
         </div>
 
