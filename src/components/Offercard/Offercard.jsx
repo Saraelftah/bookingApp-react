@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 function Offercard({ offer }) {
-
   return (
     <>
       <Link

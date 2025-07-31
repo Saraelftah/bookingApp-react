@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { axiosInstance } from "../../network/interceptor";
-import Offercard from "../OfferCard/OfferCard";
+import Offercard from "../Offercard/Offercard";
 
 function BestOffers() {
   const [bestOffers, setBestOffers] = useState([]);
