@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "../Layout/Layout";
 import ProtectedRoute from "./ProtectedRoutes";
 
@@ -14,7 +14,7 @@ const MyBookings = lazy(() => import("../pages/MyBookings/MyBookings"));
 const Hotels = lazy(() => import("../pages/Hotels/Hotels"));
 
 function AppRoutes() {
-  let router = createHashRouter([
+  let router = createBrowserRouter([
     { path: "login", element: <Login /> },
     { path: "signup", element: <Signup /> },
     {
