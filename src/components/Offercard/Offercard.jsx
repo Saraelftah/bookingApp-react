@@ -5,7 +5,7 @@ function Offercard({ offer }) {
     <>
       <Link
         to={`/details/${offer.id}`}
-        className="flex items-center gap-4 p-3 bg-gray-100 rounded-full shadow-lg hover:bg-gray-200 w-4/6"
+        className="flex items-center gap-4 p-3 bg-gray-100 rounded-full shadow-lg hover:bg-gray-200 w-4/6 transition duration-300 hover:scale-x-115"
       >
         <div className="w-25 h-25 rounded-full overflow-hidden">
           <img

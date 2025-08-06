@@ -46,6 +46,7 @@ function Signup() {
                 type="text"
                 placeholder="Enter your name..."
                 className="input input-info w-full"
+                autoComplete="off"
                 {...register("username", {
                   required: "Username is required",
                   minLength: {
@@ -68,6 +69,7 @@ function Signup() {
                 type="email"
                 placeholder="Enter your email..."
                 className="input input-info w-full"
+                autoComplete="off"
                 {...register("email", {
                   required: "Email is required",
                   pattern: {
@@ -90,6 +92,7 @@ function Signup() {
                 type="password"
                 placeholder="Enter your password..."
                 className="input input-info w-full"
+                autoComplete="off"
                 {...register("password", {
                   required: "Password is required",
                   minLength: {
@@ -117,6 +120,7 @@ function Signup() {
                 type="password"
                 placeholder="Confirm your password..."
                 className="input input-info w-full"
+                autoComplete="off"
                 {...register("confirmPassword", {
                   required: "Confirmation is required",
                   validate: (value) =>
@@ -141,6 +145,7 @@ function Signup() {
                 type="tel"
                 placeholder="Enter your phone number..."
                 className="input input-info w-full"
+                autoComplete="off"
                 {...register("phone", {
                   required: "Phone is required",
                   pattern: {

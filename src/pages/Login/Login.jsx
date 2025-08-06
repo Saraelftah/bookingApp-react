@@ -58,6 +58,8 @@ function Login() {
                 placeholder="Enter your email..."
                 id="email"
                 className="input input-info w-full"
+                autoComplete="off"
+                autoFocus
                 {...register("email", { required: "Email is required" })}
               />
               {errors.email && (
@@ -75,6 +77,7 @@ function Login() {
                 placeholder="Enter your password..."
                 id="password"
                 className="input input-info w-full"
+                autoComplete="off"
                 {...register("password", { required: "Password is required" })}
               />
               {errors.password && (

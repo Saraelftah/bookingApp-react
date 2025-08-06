@@ -5,5 +5,5 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react(),
   ],
-  //  base: '/bookingApp-react/'
+   base: '/bookingApp-react/'
 })
