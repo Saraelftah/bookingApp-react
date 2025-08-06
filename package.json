@@ -2,13 +2,14 @@
   "name": "booking-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/Saraelftah/bookingApp-react.git",
+  "homepage": "https://Saraelftah.github.io/bookingApp-react",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
