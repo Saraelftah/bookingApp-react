@@ -95,8 +95,8 @@ function Payment() {
         </div>
       </div>
 
-      <div className="flex gap-8 justify-between">
-        <div className="bg-white py-8 px-5 rounded-lg w-5/6">
+      <div className="flex flex-col md:flex-row gap-8 justify-between">
+        <div className="bg-white py-8 px-5 rounded-lg md:w-5/6">
           <form onSubmit={handleSubmit(onSubmit)}>
             <h2 className="text-3xl font-bold mb-3">Your Details</h2>
 
@@ -324,7 +324,7 @@ function Payment() {
 
             <button
               type="submit"
-              className="w-full mt-3 btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-blue-500 hover:bg-blue-700 text-white"
+              className="w-full mt-3 btn btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-blue-500 hover:bg-blue-700 text-white"
             >
               Pay Now
             </button>

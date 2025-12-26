@@ -17,11 +17,18 @@ function Layout() {
       <Navbar isOpen={isOpen} />
       
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-
       
-      <div className={`transition-all duration-300 ${isOpen ? "ml-64" : "ml-20"}`}>
+      {/* bsckdrop for mobile */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-40 md:hidden" 
+          onClick={toggleSidebar}
+        ></div>
+      )}
+      
+      <div className={`transition-all duration-300 ${isOpen ? "md:ml-64" : "md:ml-20"} ml-0`}>
         <Search />
-        <main className="container p-4 min-h-screen">
+        <main className="container pl-4 pb-20 min-h-screen">
           {" "}
           <Outlet />
         </main>

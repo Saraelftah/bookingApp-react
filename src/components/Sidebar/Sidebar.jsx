@@ -15,18 +15,18 @@ function Sidebar({isOpen, toggleSidebar}) {
   return (
     <>
       <div
-        className={`${styles.sideBar} absolute top-10 left-8 text-white p-4 transition-all duration-300 ${
-          isOpen ? "w-64" : "w-20"
-        }`}
+        className={`${styles.sideBar}
+         fixed z-50 top-10 left-8 text-white md:p-4  transition-all duration-300 
+        ${isOpen ? "w-64 translate-x-0 p-4" : "w-20 md:translate-x-0 -translate-x-full p-1"}`}
       >
 
         
-        <div className={`flex items-center mb-15 ${!isOpen?"justify-center": "justify-between"}`}>
+        <div className={`flex items-center mb-15 ${!isOpen?"md:justify-center justify-end mt-4 md:mt-0": "justify-between"}`}>
           <p className={`${styles.logo} ${!isOpen && "hidden"}`}>Bookler</p>
           <i className="fa-solid fa-bars text-2xl cursor-pointer" onClick={toggleSidebar}></i>
         </div>
 
-        <ul className={`flex flex-col gap-8  ${!isOpen?"items-center": "px-4"}`}>
+        <ul className={`flex flex-col gap-8  ${!isOpen?"md:items-center items-end": "px-4"}`}>
           <Navitem
             icon="fa-solid fa-house"
             direction="row"

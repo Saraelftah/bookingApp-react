@@ -28,7 +28,7 @@ function Navbar({ isOpen }) {
     <>
       <nav className={`${isHome ? styles.homeNavbar : styles.defaultNavbar}`}>
         {/* Burger Menu for Mobile */}
-        <div className="lg:hidden absolute right-5 top-20">
+        <div className="md:hidden absolute right-5 top-20">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost">
               <i className="fa-solid fa-bars text-2xl text-white"></i>
@@ -62,7 +62,7 @@ function Navbar({ isOpen }) {
             }`}
           >
             {/* desktop */}
-            <ul className="hidden lg:flex gap-8">
+            <ul className="hidden md:flex gap-8">
               <Navitem
                 icon="fa-solid fa-bed"
                 label="Hotel"

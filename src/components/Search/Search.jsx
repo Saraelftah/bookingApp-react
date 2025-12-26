@@ -34,7 +34,7 @@ function Search() {
       <div className="relative w-5/6 mx-auto mt-4 lg:hidden">
         <button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="absolute -right-15 top-0 z-10 btn btn-circle bg-red-500 hover:bg-red-700 text-white"
+          className="absolute right-0 top-0 z-10 btn btn-circle bg-red-500 hover:bg-red-700 text-white"
         >
           {isOpen ? (
             <i className="fa-solid fa-xmark text-lg"></i>

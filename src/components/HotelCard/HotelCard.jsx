@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function HotelCard({ hotel }) {
   const price = hotel.pricing?.[0]?.discountedPrice || "";
+  const navigate = useNavigate();
+  const handlePayNow = () => {
+    navigate("/payment", { state: { details: hotel } });
+  };
 
   return (
     <div className="flex bg-white rounded-xl shadow-md overflow-hidden">
@@ -15,9 +19,9 @@ function HotelCard({ hotel }) {
 
       <div className="py-3 pl-3 w-2/3 flex flex-col justify-between">
         <div className="relative">
-          <h3 className="text-xl font-bold mb-2">{hotel.name}</h3>
+          <h3 className="md:text-xl w-2/3 font-bold mb-2">{hotel.name}</h3>
 
-          <span className="bg-blue-500 text-white text-sm py-1 px-3  absolute right-0 top-2 rounded-tl-lg rounded-bl-lg">
+          <span className="bg-blue-500 text-white text-sm py-1 px-3 absolute right-0 top-0 md:top-2 rounded-tl-lg rounded-bl-lg">
             {hotel.rating.score} <i className="fa-solid fa-star"></i>
           </span>
 
@@ -37,25 +41,25 @@ function HotelCard({ hotel }) {
           </span>
         </div>
 
-        <div className=" flex items-center justify-between gap-3">
+        <div className=" flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-3">
             <p className="text-yellow-400">{hotel.pricing[0].discount}</p>
             <p className="text-lg font-semibold text-red-600">${price}</p>
           </div>
 
-          <div className=" flex gap-3 mr-2">
+          <div className="flex gap-3 mr-2">
             <Link
               to={`/details/${hotel.id}`}
-              className="bg-gray-100 px-2 py-2 rounded-2xl hover:bg-gray-300 transition duration-300"
+              className="bg-gray-100 md:px-4 px-2 py-2 rounded-md hover:bg-gray-300 transition duration-300 text-[12px] md:text-sm lg:text-base"
             >
               View Details
             </Link>
-            <Link
-              to="/payment"
-              className="bg-blue-500 px-2 py-2 rounded-2xl text-white hover:bg-blue-700 transition duration-300"
+            <button
+              onClick={handlePayNow}
+              className="btn btn-sm md:btn-md bg-blue-500 text-white hover:bg-blue-700 transition duration-300 text-[12px] md:text-sm lg:text-base"
             >
               Book Now
-            </Link>
+            </button>
           </div>
         </div>
       </div>

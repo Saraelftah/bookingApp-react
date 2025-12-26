@@ -70,6 +70,7 @@ function Login() {
               )}
             </div>
 
+            {/* /password */}
             <div className="flex flex-col py-5 gap-2 w-5/6 ">
               <label htmlFor="password">Password</label>
               <input
